@@ -4,9 +4,7 @@
 Berikut dokumentasi CRUD (Create, Read, Update, Delete) Website News 
 using db support by xampp mysql 
 here's the doc;
-<img width="960" alt="image" src="https://github.com/Hasia58/news_hasia/assets/172201345/da3981a5-874b-4922-ab83-419964a7845f">
-<img width="960" alt="image" src="https://github.com/Hasia58/news_hasia/assets/172201345/33049c44-0cb1-4c4c-9724-d4541824877f">
-<img width="960" alt="image" src="https://github.com/Hasia58/news_hasia/assets/172201345/9dfaa92b-47d6-4047-9f45-73e64237bd77">
-<img width="960" alt="image" src="https://github.com/Hasia58/news_hasia/assets/172201345/b1d7646f-c64d-4eb8-aaf9-c827c66a126a">
-
-
+<img width="960" alt="image" src="https://github.com/Hasia58/news_hasia/assets/172201345/996c6be3-5804-4a79-aca0-38022d040ff0">
+<img width="960" alt="image" src="https://github.com/Hasia58/news_hasia/assets/172201345/7a9151f9-49a8-42d7-b23b-640c7dc714f4">
+<img width="960" alt="image" src="https://github.com/Hasia58/news_hasia/assets/172201345/fb1976eb-d8b4-4ac9-917d-12a5bf641598">
+<img width="960" alt="image" src="https://github.com/Hasia58/news_hasia/assets/172201345/4bb1c432-174c-4232-8d6e-2695b6ee91c6">
