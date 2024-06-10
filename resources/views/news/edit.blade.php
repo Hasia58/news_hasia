@@ -7,37 +7,37 @@
     <title>News Website - Edit News</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
-        .bg-pink {
-            background-color: pink;
+        .bg-babyblue {
+            background-color: #89CFF0;
         }
 
-        .btn-pink {
-            background-color: pink;
+        .btn-babyblue {
+            background-color: #89CFF0;
             color: white;
         }
 
-        .btn-pink:hover {
-            background-color: deeppink;
+        .btn-babyblue:hover {
+            background-color: #7BC3E2;
             color: white;
         }
     </style>
 </head>
 
 <body>
-    <div class="bg-pink py-3">
+    <div class="bg-babyblue py-3">
         <h3 class="text-white text-center">News Website - Edit News</h3>
     </div>
 
     <div class="container">
         <div class="justify-content-center row mt-4">
             <div class="d-flex col-md-10 justify-content-start">
-                <a href="{{ route('news.index') }}" class="btn-pink btn">Back to News List</a>
+                <a href="{{ route('news.index') }}" class="btn-babyblue btn">Back to News List</a>
             </div>
         </div>
         <div class="row d-flex justify-content-center">
             <div class="col-md-10">
                 <div class="card border-0 shadow-lg mt-5 mb-5">
-                    <div class="card-header bg-pink">
+                    <div class="card-header bg-babyblue">
                         <h3 class="text-white">Edit News</h3>
                     </div>
                     <form action="{{ route('news.update', $news->id) }}" method="POST" enctype="multipart/form-data">
@@ -46,7 +46,7 @@
                         <div class="card-body">
                             <div class="mb-3">
                                 <label class="form-label h4" for="title">Title</label>
-                                <input type="text" value="{{ old('title', $news->title) }}" class="form-control form-control-lg  @error('title') is-invalid @enderror" placeholder="Title" name="title" />
+                                <input type="text" value="{{ old('title', $news->title) }}" class="form-control form-control-lg @error('title') is-invalid @enderror" placeholder="Title" name="title" />
                                 @error('title')
                                 <p class='invalid-feedback'>{{ $message }}</p>
                                 @enderror
@@ -72,8 +72,18 @@
                                 <p class='invalid-feedback'>{{ $message }}</p>
                                 @enderror
                             </div>
+                            <div class="mb-3">
+                                <label class="form-label h4" for="image">Image</label>
+                                <input type="file" class="form-control form-control-lg @error('image') is-invalid @enderror" name="image" />
+                                @error('image')
+                                <p class='invalid-feedback'>{{ $message }}</p>
+                                @enderror
+                                @if($news->image)
+                                <img src="{{ asset('uploads/news/' . $news->image) }}" alt="{{ $news->title }}" class="img-thumbnail mt-2" width="150">
+                                @endif
+                            </div>
                             <div class="d-grid">
-                                <button class="btn btn-lg btn-pink">Update</button>
+                                <button class="btn btn-lg btn-babyblue">Update</button>
                             </div>
                         </div>
                     </form>
